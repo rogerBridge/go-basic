@@ -1,0 +1,17 @@
+# Plan and Did
+- [x] Introduction and Installation
+- [x] Hello World
+- [x] Variables
+- [x] Types
+- [x] Constants
+- [x] Functions
+- [x] Packages (go mod)
+- [x] If statement 
+- [x] For statement
+- [x] Switch statement
+- [x] Arrays and Slices
+- [x] Variadic Functions
+- [x] Maps
+- [x] Strings
+- [x] Pointers
+- [] Structs
