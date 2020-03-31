@@ -1,5 +1,6 @@
 package main
 
 func main() {
-	outStudentInfo(inStudentInfo())
+	isStructEqual()
+	//outStudentInfo(inStudentInfo())
 }

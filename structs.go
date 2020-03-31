@@ -8,13 +8,13 @@ import "fmt"
 
 type Student struct {
 	firstname string
-	lastname string
-	age string
-	height string
+	lastname  string
+	age       string
+	height    string
 	advantage string
 }
 
-func outStudentInfo(s *Student)  {
+func outStudentInfo(s *Student) {
 	fmt.Println("Before", s)
 	s.advantage = "Computer Science"
 	fmt.Println("After", s)
@@ -29,4 +29,27 @@ func inStudentInfo() *Student {
 		advantage: "Sing, Jump, Rap",
 	}
 	return &s1
+}
+
+// 两个struct可以比较相等性吗?
+// 当field不可比较时, 两个struct不相等, 当包含的field可比较&&比较结果相等时, 两个struct相等
+func isStructEqual() {
+	stu1 := Student{
+		age: "24",
+	}
+	stu2 := Student{
+		firstname: "",
+		lastname:  "",
+		age:       "24",
+		height:    "",
+		advantage: "",
+	}
+	switch {
+	case stu1 == stu2:
+		{
+			fmt.Println("equal")
+		}
+	default:
+		fmt.Println("not equal")
+	}
 }
