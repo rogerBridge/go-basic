@@ -14,4 +14,5 @@
 - [x] Maps
 - [x] Strings
 - [x] Pointers
-- [] Structs
+- [x] Structs
+- [] Methods
