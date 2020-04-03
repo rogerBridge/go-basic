@@ -39,7 +39,7 @@ func (r *Rectangle) Perimeter() float64 {
 }
 
 // interface 就是对struct的共有属性的一些抽象
-func play1() {
+func playInterface() {
 	c1 := new(Circle)
 	c1.Radius = 1
 	r1 := new(Rectangle)
@@ -107,3 +107,5 @@ func findType2(i interface{}) {
 		fmt.Println("unknown type")
 	}
 }
+
+// 之后一个模块一个函数, 不要搞得这个分散了

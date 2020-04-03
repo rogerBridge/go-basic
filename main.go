@@ -17,18 +17,21 @@ func main() {
 	//ss.show()
 
 	// interface 对 struct的抽象演示
-	//play1()
+	//playInterface()
 
-	// show interface assert
-	showAssert()
+	//// show interface assert
+	//showAssert()
+	//
+	//// type switch
+	//findType("leo2n")
+	//s := make([]int, 10)
+	//findType(s)
+	//
+	//// switch i.(type) 可以用来判断不同interface
+	//findType2("leo2n")
+	//findType2(&Asian{age: 24, name: "leo2n"})
 
-	// type switch
-	findType("leo2n")
-	s := make([]int, 10)
-	findType(s)
-
-	// switch i.(type) 可以用来判断不同interface
-	findType2("leo2n")
-	findType2(&Asian{age: 24, name: "leo2n"})
+	// goroutine
+	playGoroutine()
 
 }
