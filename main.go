@@ -32,6 +32,9 @@ func main() {
 	//findType2(&Asian{age: 24, name: "leo2n"})
 
 	// goroutine
-	playGoroutine()
+	//playGoroutine()
+
+	// channel
+	playChannel()
 
 }
