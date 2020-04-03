@@ -35,6 +35,15 @@ func main() {
 	//playGoroutine()
 
 	// channel
-	playChannel()
+	//playChannel()
 
+	// buffer channel
+	//playBufferdChannel()
+	//capacityAndLength()
+
+	// worker pool
+	playWorkerPool()
+
+	// play wait group
+	//playWaitGroup()
 }
