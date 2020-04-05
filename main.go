@@ -3,6 +3,7 @@ package main
 func main() {
 	//isStructEqual()
 	//outStudentInfo(inStudentInfo())
+	playStructs()
 
 	//// 相比值结构体, 更常用指针结构体, 值传递和指针传递, 是否会作用到原来的结构体, 这个很关键
 	//s := new(Student)
@@ -49,5 +50,5 @@ func main() {
 
 	// mutex
 	//playNoMutex()
-	playMutex()
+	//playMutex()
 }

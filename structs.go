@@ -53,3 +53,18 @@ func isStructEqual() {
 		fmt.Println("not equal")
 	}
 }
+
+type Teacher struct {
+	Name string
+}
+
+func (t *Teacher) printName() {
+	fmt.Println(t.Name)
+}
+
+func playStructs() {
+	t := new(Teacher)
+	t.Name = "Jack"
+	// t.printName || (*t).printName 本质上都是(*t).printName
+	(*t).printName()
+}
