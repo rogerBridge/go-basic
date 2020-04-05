@@ -42,8 +42,12 @@ func main() {
 	//capacityAndLength()
 
 	// worker pool
-	playWorkerPool()
+	//playWorkerPool()
 
 	// play wait group
 	//playWaitGroup()
+
+	// mutex
+	//playNoMutex()
+	playMutex()
 }
