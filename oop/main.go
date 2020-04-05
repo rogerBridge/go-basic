@@ -13,6 +13,9 @@ func main() {
 	//	LeavesTaken: 20,
 	//}
 	//e.LeavesRemaining()
-	e := employee.New("Leborn", "James", 50, 30)
-	e.LeavesRemaining()
+	//e := employee.New("Leborn", "James", 50, 30)
+	//e.LeavesRemaining()
+	//employee.Add()
+	employee.PlayPoly()
+
 }
