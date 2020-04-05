@@ -86,6 +86,11 @@ func (a Advertisement) calculate() int {
 func (a Advertisement) source() string {
 	return a.adName
 }
+
+func (a Advertisement) sayHello() {
+	fmt.Println("Hello")
+}
+
 func calculateNetIncome(ic []Income) {
 	var netincome int = 0
 	for _, income := range ic {
