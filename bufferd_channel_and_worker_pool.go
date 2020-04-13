@@ -101,8 +101,8 @@ func worker(wg *sync.WaitGroup) {
 func createWorkerPool(noOfWorkers int) {
 	var wg sync.WaitGroup
 	for i := 0; i < noOfWorkers; i++ {
-		wg.Add(1) //goroutine + 1
-		go worker(&wg)
+		wg.Add(1) // goroutine + 1
+		go worker(&wg) // close(results)
 	}
 	wg.Wait()
 	close(results)

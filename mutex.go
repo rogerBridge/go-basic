@@ -30,7 +30,7 @@ func playMutex() {
 	m := new(sync.Mutex)
 	for i := 1; i < 101; i++ {
 		wg.Add(1)
-		increment(wg, m)
+		go increment(wg, m)
 	}
 	wg.Wait()
 	fmt.Println("increment with mutex :)", x)
