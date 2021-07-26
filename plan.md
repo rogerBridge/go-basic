@@ -15,4 +15,4 @@
 - [x] Strings
 - [x] Pointers
 - [x] Structs
-- [] Methods
+- [x] Methods

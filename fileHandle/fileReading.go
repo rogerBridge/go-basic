@@ -19,5 +19,5 @@ func ReadingFile() {
 		return
 	}
 	fmt.Println("content of file:", string(data))
-	os.Create("hello")
+	//os.Create("hello")
 }

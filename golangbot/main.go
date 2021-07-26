@@ -1,7 +1,5 @@
 package main
 
-import "go_basic/fileHandle"
-
 func main() {
 	//isStructEqual()
 	//outStudentInfo(inStudentInfo())
@@ -65,5 +63,6 @@ func main() {
 	//playFuncAsArguments()
 
 	// File reading
-	fileHandle.ReadingFile()
+	//fileHandle.ReadingFile()
+
 }
