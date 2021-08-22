@@ -6,7 +6,6 @@ import (
 	"github.com/faiface/beep/speaker"
 	"log"
 	"os"
-	"runtime"
 	"time"
 )
 
@@ -21,8 +20,8 @@ type TestA struct {
 }
 
 func main() {
-	runtime.GOMAXPROCS(1)
-	log.Printf("%+v", deferAndReturn(0)) // 先return再defer
+	//runtime.GOMAXPROCS(1)
+	log.Printf("%+v", deferAndReturn(0)) // first normal code, then defer, finally return
 }
 
 func printS(i int) {
@@ -32,7 +31,7 @@ func printS(i int) {
 func deferAndReturn(i int) int {
 	defer func() {
 		i += 1
-		fmt.Printf("%+v\n", i)
+		fmt.Printf("in defer %+v\n", i)
 	}()
 	return i
 }
